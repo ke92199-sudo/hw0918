@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="hw0918.css" />
+  </head>
+  <body>
+    <p class="top-title">個人報名 Individual Registration</p>
+    <form action="">
+      <div>
+        <mark class="sub-title">基本資料/ Basic Information</mark>
+
+        <!-- 姓名 -->
+        <fieldset>
+          <label for="name">姓名/Name <span class="red">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="請輸入姓名"
+            required
+          />
+        </fieldset>
+        <!-- 性別 -->
+        <fieldset>
+          <span>性别/Gender</span>
+          <input type="radio" id="male" name="Gender" value="male" />
+          <label for="male">男/male</label>
+          <input type="radio" id="female" name="Gender" value="female" />
+          <label for="female">女/female</label>
+        </fieldset>
+        <!-- 國籍 -->
+        <fieldset>
+          <span>國籍/Nationality</span>
+          <input type="radio" id="ROC" name="Nationality" value="ROC" />
+          <label for="ROC">本國國籍/ROC Citizens</label>
+          <input type="radio" id="Non" name="Nationality" value="Non" />
+          <label for="Non">外國國籍/Non-Citizens</label>
+        </fieldset>
+        <!-- 身分證號 -->
+        <fieldset>
+          <label for="ID">身份證號/ID Number<span class="red">*</span></label>
+          <input
+            type="text"
+            id="ID"
+            name="ID"
+            placeholder="身分證號或護照號碼"
+            required
+          />
+        </fieldset>
+        <!-- 出生日期 -->
+        <fieldset>
+          <span>出生日期/Date Of Birth</span>
+          <select name="Year" id="Year">
+            <option value="">年 Year</option>
+            <option value="96">1996</option>
+            <option value="97">1997</option>
+            <option value="98">1998</option>
+            <option value="99">1999</option>
+            <option value="00">2000</option>
+            <option value="01">2001</option>
+            <option value="02">2002</option>
+            <option value="03">2003</option>
+            <option value="04">2004</option>
+          </select>
+          <select name="Month" id="Month">
+            <option value="">月 Month</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select name="Day" id="Day">
+            <option value="">日 Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </fieldset>
+        <!-- 電子信箱/Email* -->
+        <fieldset>
+          <label for="email">電子信箱/Email<span class="red">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+        </fieldset>
+        <!-- 聯絡電話/Contact Number -->
+        <fieldset>
+          <span>聯絡電話/Contact Number</span>
+          <label for="Mobile">手機/ Mobile</label>
+          <input
+            type="tel"
+            id="Mobile"
+            name="Mobile"
+            placeholder="0922053012"
+          />
+          <label for="Home">住家/Home</label>
+          <input type="tel" id="Home" name="Home" placeholder="0225855659" />
+          <label for="Office">公司/ Office</label>
+          <input type="tel" id="Office" name="Office" />
+        </fieldset>
+        <!-- 通訊地址/Mailing Address -->
+
+        <fieldset>
+          <label for="address">通訊地址/Mailing Address</label>
+          <select name="city" id="city">
+            <option value="">請選擇縣市別 County/City</option>
+            <option value="city1">臺北市</option>
+            <option value="city2">新北市</option>
+            <option value="city3">基隆市</option>
+          </select>
+          <select name="township" id="township">
+            <option value="">請選擇鄉鎮區別 Township</option>
+            <option value="township1">淡水</option>
+            <option value="township2">八里</option>
+            <option value="township3">板橋</option>
+          </select>
+
+          <input
+            type="tel"
+            id="address"
+            name="address"
+            placeholder="郵遞區号"
+          />
+          <input
+            type="tel"
+            id="address1"
+            name="address1"
+            placeholder="例如：昌吉街55號2楼206室"
+          />
+        </fieldset>
+        <!-- 聚急聯絡人姓名/Name of Emergency -->
+        <fieldset>
+          <label for="Contact">聚急聯絡人姓名/Name of Emergency Contact</label>
+          <input type="text" id="Contact" name="Contact" />
+          <label for="Relationship">關係/Relationship</label>
+          <input type="text" id="Relationship" name="Relationship" />
+          <label for="Phone">電話/Phone</label>
+          <input type="tel" id="Phone" name="Phone" />
+        </fieldset>
+      </div>
+      <div>
+        <mark class="sub-title">競賽項目資料 / Race Category Information</mark>
+        <!-- 請選擇衣服尺寸 -->
+        <fieldset>
+          <input type="checkbox" id="run-9km" name="race-9km" value="9km" />
+          <label for="run-9km">9KM (NTD 800)</label>
+          <select name="size-9km">
+            <option value="">請選擇衣服尺寸</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <input type="checkbox" id="run-3km" name="race-3km" value="3km" />
+          <label for="run-3km">3KM (NTD 650)</label>
+          <select name="size-3km">
+            <option value="">請選擇衣服尺寸</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+        </fieldset>
+      </div>
+      <div>
+        <mark class="sub-title">報到方式(二擇一) / Check-in Method</mark>
+        <fieldset>
+          <span>郵寄代理報到 / Postal delivery check-in</span>
+          <input type="radio" id="mail-yes" name="checkin-method" value="yes" />
+          <label for="mail-yes">是 / Y（需額外付費，限台灣本島）</label>
+          <input
+            type="radio"
+            id="mail-no"
+            name="checkin-method"
+            value="no"
+            checked
+          />
+          <label for="mail-no">否 / N</label>
+        </fieldset>
+
+        <fieldset>
+          <input
+            type="radio"
+            id="onsite"
+            name="checkin-method"
+            value="onsite"
+            checked
+          />
+          <label for="onsite">地點：花博爭艷館（臺北市中山區玉門街1號）</label>
+          <span>時間：</span>
+          <input type="date" name="start-date" value="2026-12-17" />
+          <span>~</span>
+          <input type="date" name="end-date" value="2026-12-18" />
+        </fieldset>
+      </div>
+      <div>
+        <!-- 其他 / Others -->
+        <mark class="sub-title">其他 / Others</mark>
+        <fieldset>
+          <label for="website">個人網站 / Website (選填)</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://"
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="note">備註 / Note</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="3"
+            cols="35"
+            placeholder="如有特殊需求請於此說明"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <label for="upload-photo">上傳證件照 / Upload Photo</label>
+          <input
+            type="file"
+            id="upload-photo"
+            name="upload-photo"
+            placeholder="Choose File"
+            required
+          />
+        </fieldset>
+      </div>
+      <div>
+        <!-- 送出與清除按鈕 -->
+        <fieldset class="btn-group">
+          <input type="submit" value="送出報名" class="btn-submit" />
+          <input type="reset" value="清除重填" class="btn-reset" />
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
